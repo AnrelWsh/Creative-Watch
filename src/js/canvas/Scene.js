@@ -41,6 +41,10 @@ export default class Scene {
         this.canvas.width = this.domElement.width * this.globalContext.windowSize.pixelRatio // set dimensions
         this.canvas.height = this.domElement.height * this.globalContext.windowSize.pixelRatio
         this.context.scale(this.globalContext.windowSize.pixelRatio, this.globalContext.windowSize.pixelRatio)
+        window.addEventListener('resize', () => {
+            location.reload();
+        }); //rechargement auto de la page lorsqu'on change ses dimensiosn
+        
     }
 
     destroy() { }

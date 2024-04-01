@@ -24,7 +24,7 @@ export default class Scenario extends Scene {
 
         this.drawWatchCase();
 
-        this.drawCurrentTime(hours, minutes, seconds);
+        // this.drawCurrentTime(hours, minutes, seconds);  //ajout de l'heure réelle en text
     }
 
     drawWatchCase() {
